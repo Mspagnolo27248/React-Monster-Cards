@@ -2,12 +2,12 @@
 
 
 const Card = (props)=>{
- const {key, className, alt, src,monsterName,email} = props
+ const {uniqueKey, className, alt, src,monsterName,email} = props
 
     return(
-        <div key = {key} className= {className}>
+        <div key = {uniqueKey} className= {className}>
         <img alt = {alt} src={src}></img> 
-        <h1 key={key}> {monsterName}</h1>
+        <h2 key={uniqueKey}> {monsterName}</h2>
         <p> {email}</p>
         </div>
     )

@@ -9,7 +9,7 @@ const CardList = (props)=> {
         {monsters.map((monster)=>(
          
              <Card 
-                 key= {monster.id}
+                 uniqueKey= {monster.id}
                  src = {`https://robohash.org/${monster.id}?set=set2&?size=180x180`}
                  className='card-container'    
                  alt = {`monster ${monster.name}`}
